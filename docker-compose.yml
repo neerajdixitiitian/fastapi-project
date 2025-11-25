@@ -6,7 +6,7 @@ services:
       context: .
       dockerfile: Dockerfile
     container_name: fastapi-app
-    image:fastapi-app-image:
+    image: fastapi-app-image
     ports:
       - "8000:8000"
     environment:
@@ -47,6 +47,6 @@ services:
       networks:
         - backend
     
-  networks:
-    backend:
-      driver: bridge
+networks:
+  backend:
+    driver: bridge
